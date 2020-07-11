@@ -14,6 +14,7 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import model.screen.IScnShotCompare;
 import model.screen.ScnShotCompare;
 import model.soup.AbstractSpider;
@@ -146,17 +147,11 @@ public class ScShotSpider extends AbstractSpider implements ISpider {
    * @return - a newly created WebDriver object.
    */
   private WebDriver create(String driverPath) {
-    // DO NOT EVER Change these settings.
-    // DO NOT EVER Change these settings.
-    // DO NOT EVER Change these settings.
-    System.setProperty("webdriver.chrome.driver", driverPath);
-    ChromeOptions chromeOptions = new ChromeOptions();
-    chromeOptions.addArguments("--headless");
-    chromeOptions.addArguments("--start-maximized");
-    chromeOptions.addArguments("--start-fullscreen");
-    chromeOptions.addArguments("disable-infobars");
-    chromeOptions.addArguments("--disable-extensions");
-    WebDriver driver = new ChromeDriver(chromeOptions);
+    WebDriver driver = null;
+    WebDriverManager.chromedriver().setup();
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless");
+    driver = new ChromeDriver(options);
     return driver;
   }
 

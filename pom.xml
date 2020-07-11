@@ -12,11 +12,13 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>net.avh4.util</groupId>
             <artifactId>imagecomparison</artifactId>
             <version>0.3.1</version>
         </dependency>
+
         <!-- if you will be comparing AWT components, Swing JComponents or JFrames: -->
         <dependency>
             <groupId>net.avh4.util</groupId>
@@ -24,6 +26,7 @@
             <version>0.3.1</version>
             <scope>runtime</scope>
         </dependency>
+
         <!-- if you will be comparing SWT components -->
         <dependency>
             <groupId>net.avh4.util</groupId>
@@ -31,57 +34,19 @@
             <version>0.3.1</version>
             <scope>runtime</scope>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/com.hotwire.image-assert/image-assert -->
         <dependency>
             <groupId>com.hotwire.image-assert</groupId>
             <artifactId>image-assert</artifactId>
             <version>1.0.5</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
         <dependency>
             <groupId>net.sourceforge.tess4j</groupId>
             <artifactId>tess4j</artifactId>
             <version>4.0.0</version>
-        </dependency>
-
-
-
-
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-web-api</artifactId>
-            <version>7.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.ozark</groupId>
-            <artifactId>ozark</artifactId>
-            <version>1.0.0-m02</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
-        <dependency>
-            <groupId>org.jsoup</groupId>
-            <artifactId>jsoup</artifactId>
-            <version>1.11.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
-        <dependency>
-            <groupId>javax.mail</groupId>
-            <artifactId>mail</artifactId>
-            <version>1.4</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/ru.yandex.qatools.ashot/ashot -->
@@ -98,8 +63,56 @@
             <version>2.4</version>
         </dependency>
 
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.ozark</groupId>
+            <artifactId>ozark</artifactId>
+            <version>1.0.0-m02</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.11.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>3.7.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
+        </dependency>
 
     </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
@@ -122,4 +135,6 @@
             </plugin>
         </plugins>
     </build>
+
+
 </project>
