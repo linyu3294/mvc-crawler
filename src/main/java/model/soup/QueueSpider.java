@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -14,8 +15,8 @@ import java.util.Queue;
  * additional feature that allows recording of each url loading time that it visits. This feature
  * was not available in SoupSpider.
  */
-public class QueueSpider extends AbstractSpider {
-Queue<String[][]> queue;
+public class QueueSpider extends AbstractSpider implements ISpider {
+LinkedList<String[]> queue;
 
 /**
  * Constructor for QueueSoup.
@@ -23,7 +24,7 @@ Queue<String[][]> queue;
 protected QueueSpider (String resourcesFolder) {
    super(resourcesFolder);
    //
-   queue = new LinkedList<String[][]>();
+   queue = new LinkedList<String[]>();
 }
 
 /**
@@ -35,23 +36,29 @@ protected QueueSpider (String resourcesFolder) {
 public void crawl (String url, String parent) throws IOException {
    setTestCoverage(url);
    setPagesIgnored();
-   String inUrls;
-   String outUrl;
+
+   queue.add(new String[] {url, ""});
+   int pointer = 0;
 
    while (!queue.isEmpty()) {
-      Document document = Jsoup.connect(url)
+
+      String pointedUrl = (queue.get(pointer) [0]);
+      Document document = Jsoup.connect( pointedUrl )
          .followRedirects(true)
          .timeout(60000)
          .get();
       Elements children = document.select("a[href]");
+
       String[][] childrenUrls = new String[children.size()][2];
       for (int i = 0; i < children.size(); i++) {
          childrenUrls[i][0] = children.get(i).baseUri();
       }
-      queue.add(childrenUrls);
+      queue.addAll(Arrays.asList(childrenUrls));
 
-      String popedUrl[] = queue.poll()[0];
-      System.out.println(popedUrl[0]);
+      String exitChild = queue.poll()[0];
+      System.out.println(exitChild);
+
+      pointer ++;
    }
 }
 

@@ -41,7 +41,8 @@ public class SoupSpider extends AbstractSpider {
 
   public void crawl (String url, String parent) throws IOException {
     if (pagesVisited.isEmpty()) {
-
+      setTestCoverage(url);
+      setPagesIgnored();
     }
     if ( ! pagesVisited.contains(url) ) {
       if ( statusCodeIsOK(url, parent) ) {

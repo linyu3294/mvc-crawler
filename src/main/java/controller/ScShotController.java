@@ -1,10 +1,11 @@
-package model.screen;
+package controller;
 
 import java.io.File;
 import java.util.HashSet;
 
 import controller.IController;
 import model.soup.ISpider;
+import model.soup.ScShotSpider;
 
 
 /**

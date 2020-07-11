@@ -1,4 +1,4 @@
-package model.screen;
+package model.soup;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -14,6 +14,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+import model.screen.IScnShotCompare;
+import model.screen.ScnShotCompare;
 import model.soup.AbstractSpider;
 import model.soup.ISpider;
 import ru.yandex.qatools.ashot.AShot;

@@ -2,7 +2,7 @@ package controller;
 
 import java.util.HashSet;
 
-import model.screen.SoupReport;
+import model.report.SoupReport;
 import model.soup.SoupSpider;
 
 /**

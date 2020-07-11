@@ -1,0 +1,471 @@
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/MSS/join/application?keycode=VAFUPR&cmp=ASI_P_MU_JN_PMR
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://secure.aarp.org/applications/user/logout/logout?referrer=https://appsec.aarp.org/mem/join?campaignId=VAFUPR&cmp=ASI_P_MU_JN_PMR
+Parent:         https://appsec.aarp.org/MSS/join/application?keycode=VAFUPR&cmp=ASI_P_MU_JN_PMR
+
+
+Status Code:    200
+URL:            https://secure.aarp.org/applications/user/logout/logout?referrer=https://appsec.aarp.org/mem/join?campaignId=VAFUPR
+Parent:         https://secure.aarp.org/applications/user/logout/logout?referrer=https://appsec.aarp.org/mem/join?campaignId=VAFUPR&cmp=ASI_P_MU_JN_PMR
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/mem/join?campaignId=VAFUPR
+Parent:         https://secure.aarp.org/applications/user/logout/logout?referrer=https://appsec.aarp.org/mem/join?campaignId=VAFUPR&cmp=ASI_P_MU_JN_PMR
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ev-multi-domain-ssl.htm
+Parent:         https://secure.aarp.org/applications/user/logout/logout?referrer=https://appsec.aarp.org/mem/join?campaignId=VAFUPR&cmp=ASI_P_MU_JN_PMR
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ev-multi-domain-ssl/#content
+Parent:         https://www.digicert.com/ev-multi-domain-ssl.htm
+
+
+Status Code:    200
+URL:            https://www.digicert.com/
+Parent:         https://www.digicert.com/ev-multi-domain-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/#content
+Parent:         https://www.digicert.com/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/#
+Parent:         https://www.digicert.com/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-pro-ssl/
+Parent:         https://www.digicert.com/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-pro-ssl/#content
+Parent:         https://www.digicert.com/secure-site-pro-ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-pro-ssl/#
+Parent:         https://www.digicert.com/secure-site-pro-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/post-quantum-cryptography/
+Parent:         https://www.digicert.com/secure-site-pro-ssl/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/post-quantum-cryptography/#content
+Parent:         https://www.digicert.com/post-quantum-cryptography/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/post-quantum-cryptography/#
+Parent:         https://www.digicert.com/post-quantum-cryptography/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/certificate-management/
+Parent:         https://www.digicert.com/post-quantum-cryptography/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/certificate-management/#content
+Parent:         https://www.digicert.com/certificate-management/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/certificate-management/#
+Parent:         https://www.digicert.com/certificate-management/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/
+Parent:         https://www.digicert.com/certificate-management/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/#content
+Parent:         https://www.digicert.com/secure-site-ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/#
+Parent:         https://www.digicert.com/secure-site-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ssl/
+Parent:         https://www.digicert.com/secure-site-ssl/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ssl/#content
+Parent:         https://www.digicert.com/secure-site-ssl/ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ssl/#
+Parent:         https://www.digicert.com/secure-site-ssl/ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ev-ssl/
+Parent:         https://www.digicert.com/secure-site-ssl/ssl/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ev-ssl/#content
+Parent:         https://www.digicert.com/secure-site-ssl/ev-ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ev-ssl/#
+Parent:         https://www.digicert.com/secure-site-ssl/ev-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/multi-domain-ssl/
+Parent:         https://www.digicert.com/secure-site-ssl/ev-ssl/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/multi-domain-ssl/#content
+Parent:         https://www.digicert.com/secure-site-ssl/multi-domain-ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/multi-domain-ssl/#
+Parent:         https://www.digicert.com/secure-site-ssl/multi-domain-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ev-multi-domain-ssl/
+Parent:         https://www.digicert.com/secure-site-ssl/multi-domain-ssl/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ev-multi-domain-ssl/#content
+Parent:         https://www.digicert.com/secure-site-ssl/ev-multi-domain-ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/ev-multi-domain-ssl/#
+Parent:         https://www.digicert.com/secure-site-ssl/ev-multi-domain-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/wildcard-ssl/
+Parent:         https://www.digicert.com/secure-site-ssl/ev-multi-domain-ssl/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/wildcard-ssl/#content
+Parent:         https://www.digicert.com/secure-site-ssl/wildcard-ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/secure-site-ssl/wildcard-ssl/#
+Parent:         https://www.digicert.com/secure-site-ssl/wildcard-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ssl-certificate/
+Parent:         https://www.digicert.com/secure-site-ssl/wildcard-ssl/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ssl-certificate/#content
+Parent:         https://www.digicert.com/ssl-certificate/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ssl-certificate/#
+Parent:         https://www.digicert.com/ssl-certificate/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/standard-ssl-certificates/
+Parent:         https://www.digicert.com/ssl-certificate/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/standard-ssl-certificates/#content
+Parent:         https://www.digicert.com/standard-ssl-certificates/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/standard-ssl-certificates/#
+Parent:         https://www.digicert.com/standard-ssl-certificates/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ev-ssl-certification/
+Parent:         https://www.digicert.com/standard-ssl-certificates/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ev-ssl-certification/#content
+Parent:         https://www.digicert.com/ev-ssl-certification/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ev-ssl-certification/#
+Parent:         https://www.digicert.com/ev-ssl-certification/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/multi-domain-ssl/
+Parent:         https://www.digicert.com/ev-ssl-certification/#
+
+
+Status Code:    200
+URL:            https://www.digicert.com/multi-domain-ssl/#content
+Parent:         https://www.digicert.com/multi-domain-ssl/
+
+
+Status Code:    200
+URL:            https://www.digicert.com/multi-domain-ssl/#
+Parent:         https://www.digicert.com/multi-domain-ssl/#content
+
+
+Status Code:    200
+URL:            https://www.digicert.com/ev-multi-domain-ssl/
+Parent:         https://www.digicert.com/multi-domain-ssl/#
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/MSS/join/application?keycode=VAFUPR&cmp=ASI_P_MU_JN_PMR
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/MSS/renew/findMe?keycode=VAFUPR&cmp=ASI_P_MU_RN_PMR
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            http://www.aarp.org/benefits-discounts/?cmp=ASI_P_MU_RN_PMR
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://www.aarp.org/benefits-discounts/?cmp=ASI_P_MU_RN_PMR#aarp-begin-content
+Parent:         http://www.aarp.org/benefits-discounts/?cmp=ASI_P_MU_RN_PMR
+
+
+Status Code:    200
+URL:            https://www.aarp.org/rewards/?intcmp=ALRT-AARP-REWARDS
+Parent:         https://www.aarp.org/benefits-discounts/?cmp=ASI_P_MU_RN_PMR#aarp-begin-content
+
+
+Status Code:    200
+URL:            https://www.aarp.org/rewards/?intcmp=ALRT-AARP-REWARDS#aarp-c-body
+Parent:         https://www.aarp.org/rewards/?intcmp=ALRT-AARP-REWARDS
+
+
+Status Code:    200
+URL:            https://secure.aarp.org/applications/user/register?response_type=code&client_id=0oa3rtsa6ahTQReOG2p7&redirect_uri=https%3A//www.aarp.org/aarp/auth/callback&scope=bui+bmi
+Parent:         https://www.aarp.org/rewards/?intcmp=ALRT-AARP-REWARDS#aarp-c-body
+
+
+Status Code:    200
+URL:            https://login.aarp.org/online-community/register/showMemberLookup.action
+Parent:         https://secure.aarp.org/applications/user/register?response_type=code&client_id=0oa3rtsa6ahTQReOG2p7&redirect_uri=https%3A//www.aarp.org/aarp/auth/callback&scope=bui+bmi
+
+
+Status Code:    200
+URL:            https://secure.aarp.org/applications/user/login?promo=ngetstarted&referrer=https://secure.aarp.org/applications/user/gsloginsuccess&request_locale=en
+Parent:         https://login.aarp.org/online-community/register/showMemberLookup.action
+
+
+Status Code:    200
+URL:            https://secure.aarp.org/applications/user/gslookup#
+Parent:         https://login.aarp.org/online-community/register/showMemberLookup.action
+
+
+Status Code:    200
+URL:            https://www.aarp.org/about-aarp/privacy-policy/
+Parent:         https://login.aarp.org/online-community/register/showMemberLookup.action
+
+
+Status Code:    200
+URL:            https://www.aarp.org/about-aarp/privacy-policy/#aarp-begin-content
+Parent:         https://www.aarp.org/about-aarp/privacy-policy/
+
+
+Status Code:    200
+URL:            https://www.aarp.org/benefits-discounts/?intcmp=ALRT-MEM-BEN
+Parent:         https://www.aarp.org/about-aarp/privacy-policy/#aarp-begin-content
+
+
+Status Code:    200
+URL:            https://www.aarp.org/benefits-discounts/?intcmp=ALRT-MEM-BEN#aarp-begin-content
+Parent:         https://www.aarp.org/benefits-discounts/?intcmp=ALRT-MEM-BEN
+
+
+Status Code:    200
+URL:            https://www.aarp.org/benefits-discounts/?intcmp=ALRT-MEM-BEN#
+Parent:         https://www.aarp.org/benefits-discounts/?intcmp=ALRT-MEM-BEN#aarp-begin-content
+
+
+Status Code:    200
+URL:            https://www.aarp.org
+Parent:         https://www.aarp.org/benefits-discounts/?intcmp=ALRT-MEM-BEN#
+
+
+Status Code:    200
+URL:            https://www.aarp.org#aarp-begin-content
+Parent:         https://www.aarp.org
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/mem/join?campaignID=UBJFALRT&intcmp=DSO-MEM-ALRT-JOIN
+Parent:         https://www.aarp.org#aarp-begin-content
+
+
+Status Code:    200
+URL:            https://www.aarp.org#
+Parent:         https://www.aarp.org#aarp-begin-content
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/mem/join?campaignid=UBBORG5&intcmp=DSO-HDR-FLIP-JOIN-ewhere
+Parent:         https://www.aarp.org#
+
+
+Status Code:    200
+URL:            https://secure.aarp.org/applications/account/myAccount.action?intcmp=DSO-HDR-FLIP-MYACCT-ewhere
+Parent:         https://www.aarp.org#
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/membership/renew?campaignid=UBBORG4&intcmp=DSO-HDR-FLIP-RENEW-ewhere
+Parent:         https://www.aarp.org#
+
+
+Status Code:    200
+URL:            https://www.aarp.org/rewards-for-good/?intcmp=DSO-HDR-R4G-EWHERE
+Parent:         https://www.aarp.org#
+
+
+Status Code:    200
+URL:            https://www.aarp.org/rewards/?referrer=https://www.aarp.org/rewards//content/aarpe/en/home/rewards-for-good/#aarp-c-body
+Parent:         https://www.aarp.org/rewards-for-good/?intcmp=DSO-HDR-R4G-EWHERE
+
+
+Status Code:    200
+URL:            https://secure.aarp.org/applications/user/login?response_type=code&client_id=0oa3rtsa6ahTQReOG2p7&redirect_uri=https%3A//www.aarp.org/aarp/auth/callback&scope=bui+bmi
+Parent:         https://www.aarp.org/rewards/?referrer=https://www.aarp.org/rewards//content/aarpe/en/home/rewards-for-good/#aarp-c-body
+
+
+Status Code:    200
+URL:            https://appsec.aarp.org/mem/join
+Parent:         https://www.aarp.org/rewards/?referrer=https://www.aarp.org/rewards//content/aarpe/en/home/rewards-for-good/#aarp-c-body
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/mypolicy
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/quickpay
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/#
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com#
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.stsgi.com/
+Parent:         https://www.stsgi.com/
+
+
+Status Code:    200
+URL:            http://www.stsgi.com
+Parent:         Main URL
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            http://www.prac.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides#
+Parent:         http://www.prac.com
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/car-insurance-quote
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto#
+
+

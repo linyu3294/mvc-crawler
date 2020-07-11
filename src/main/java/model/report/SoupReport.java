@@ -1,4 +1,4 @@
-package model.screen;
+package model.report;
 
 import java.io.BufferedReader;
 import java.io.File;
