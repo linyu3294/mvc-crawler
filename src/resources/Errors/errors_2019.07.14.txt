@@ -1,0 +1,7 @@
+Status Code:    Failed to get Response. Due to a runtime IOException.
+                Illegal character in URL
+URL:            https://www.plymouthrock.com/about/newsroom/press-releases/plymouth-rock-assurance-opens-new-corporate-headquarters?utm_source=EWS&utm_medium=AdUnit_B&utm_campaign=PlymouthRockAssuranceOpensNewCorporateHeadquarters
+&utm_content=PRAONCH
+Parent:         https://www.plymouthrock.com/#
+
+

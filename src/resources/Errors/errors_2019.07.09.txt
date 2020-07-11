@@ -1,0 +1,41 @@
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/resource-center/21st-century
+Parent:         https://www.plymouthrock.com/blog#
+
+
+Status Code:    Failed to get Response. Due to a runtime UnsupportedMimeTypeException.
+                Unhandled content type. Must be text/*, application/xml, or application/xhtml+xml
+URL:            https://www.plymouthrock.com/RoadRewardsFAQ
+Parent:         https://www.plymouthrock.com/insurance/policy-perks/road-rewards#
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/category/your-drive
+Parent:         https://www.plymouthrock.com/blog/new-job-tax-forms/#
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/category/your-home
+Parent:         https://www.plymouthrock.com/blog/new-job-tax-forms/#
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/category/your-safety
+Parent:         https://www.plymouthrock.com/blog/new-job-tax-forms/#
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/category/your-community
+Parent:         https://www.plymouthrock.com/blog/new-job-tax-forms/#
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/category/your-assurance
+Parent:         https://www.plymouthrock.com/blog/new-job-tax-forms/#
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/new-job-tax-forms/#respond
+Parent:         https://www.plymouthrock.com/blog/new-job-tax-forms/#
+
+

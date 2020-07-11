@@ -1,0 +1,25 @@
+Status Code:    502  HTTP error fetching URL
+URL:            http://newpv02-plymouthrock/about/blog
+Parent:         http://newpv02-plymouthrock/about/careers#
+
+
+Status Code:    502  HTTP error fetching URL
+URL:            http://newpv02-plymouthrock/blog/get-home-safe/
+Parent:         http://newpv02-plymouthrock/about/becomeanagent#
+
+
+Status Code:    502  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/about/blog
+Parent:         https://www.plymouthrock.com/about/careers#
+
+
+Status Code:    502  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/blog
+Parent:         https://www.plymouthrock.com/claims/repairshop/madtd#
+
+
+Status Code:    502  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/blog/get-home-safe/
+Parent:         https://www.plymouthrock.com/about/becomeanagent#
+
+

@@ -1,0 +1,243 @@
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/mypolicy
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/quickpay
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/#
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com#
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/mypolicy
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/quickpay
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/#
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com#
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/mypolicy
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/quickpay
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/#
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com#
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         http://www.prac.com/aarp
+
+

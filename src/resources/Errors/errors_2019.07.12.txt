@@ -1,0 +1,44 @@
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/resource-center/21st-century
+Parent:         https://www.plymouthrock.com/blog
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/14-favorite-nj-diners/#respond
+Parent:         https://www.plymouthrock.com/blog/14-favorite-nj-diners/#comment-5384
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/happy-holidays/#respond
+Parent:         https://www.plymouthrock.com/blog/happy-holidays/#comment-7784
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/plymouth-rock-is-proud-to-support-nikkis-law-and-padd-org/#respond
+Parent:         https://www.plymouthrock.com/blog/plymouth-rock-is-proud-to-support-nikkis-law-and-padd-org/#comment-280
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/grill-master-approved-recipes-youll-want-to-make-this-weekend/#respond
+Parent:         https://www.plymouthrock.com/blog/grill-master-approved-recipes-youll-want-to-make-this-weekend/#main
+
+
+Status Code:    Failed to get Response. Due to a runtime IOException.
+                Illegal character in URL
+URL:            https://www.plymouthrock.com/about/newsroom/press-releases/plymouth-rock-assurance-opens-new-corporate-headquarters?utm_source=EWS&utm_medium=AdUnit_B&utm_campaign=PlymouthRockAssuranceOpensNewCorporateHeadquarters
+&utm_content=PRAONCH
+Parent:         https://www.plymouthrock.com/#
+
+
+Status Code:    400  HTTP error fetching URL
+URL:            http://www.twinlightsins.com/../
+Parent:         http://www.twinlightsins.com/twlt_iPolicy.htm#
+
+
+Status Code:    Failed to get Response. Due to a runtime IOException.
+                Illegal character in URL
+URL:            https://www.plymouthrock.com/about/newsroom/press-releases/plymouth-rock-assurance-opens-new-corporate-headquarters?utm_source=EWS&utm_medium=AdUnit_B&utm_campaign=PlymouthRockAssuranceOpensNewCorporateHeadquarters
+&utm_content=PRAONCH
+Parent:         https://www.plymouthrock.com/#
+
+

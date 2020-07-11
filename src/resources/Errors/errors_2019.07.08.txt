@@ -1,0 +1,10 @@
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/resource-center/21st-century
+Parent:         https://www.plymouthrock.com/resource-center/severe-weather-events#
+
+
+Status Code:    500
+URL:            https://www.plymouthrock.com/resource-center/21st-century
+Parent:         https://www.plymouthrock.com/resource-center/severe-weather-events#
+
+

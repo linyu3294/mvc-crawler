@@ -1,0 +1,16 @@
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/understanding-car-insurance-in-ma
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    Failed to get Response. Due to a runtime IOException.
+                Read timed out
+URL:            http://newpv02-plymouthrock/claims/repairshop/ma
+Parent:         http://newpv02-plymouthrock/claims/repairshop#
+
+
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/understanding-car-insurance-in-ma
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides#
+
+

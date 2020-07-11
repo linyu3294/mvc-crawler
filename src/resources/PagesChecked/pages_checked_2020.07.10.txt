@@ -1,0 +1,644 @@
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/mypolicy
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/quickpay
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/#
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com#
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.stsgi.com/
+Parent:         https://www.stsgi.com/
+
+
+Status Code:    200
+URL:            http://www.stsgi.com
+Parent:         Main URL
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            http://www.prac.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides#
+Parent:         http://www.prac.com
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/car-insurance-quote
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/car-insurance-quote#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/car-insurance-quote
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/discounts
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/car-insurance-quote#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/discounts#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/discounts
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/coverage
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/discounts#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/coverage#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/coverage
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/compare
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/car-insurance-quote#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/compare#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/compare
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/cheapest-not-best
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/cheapest-not-best#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/cheapest-not-best
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/customer-benefits
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/cheapest-not-best#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/customer-benefits#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/customer-benefits
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/cancel-car-insurance
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/customer-benefits#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/cancel-car-insurance#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/cancel-car-insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/cancel-car-insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/file-claim
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/file-claim#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/file-claim
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/understanding-car-insurance
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/claims-center-ma/cancel-car-insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/understanding-car-insurance#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/understanding-car-insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/finding-best-car-insurance
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/understanding-car-insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/finding-best-car-insurance#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/finding-best-car-insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/savings-pass
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/finding-best-car-insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/savings-pass#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/savings-pass
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/insure-new-car
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/finding-best-car-insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/insure-new-car#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/insure-new-car
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/home
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/home#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/home
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/home/coverage
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/home#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/home/coverage#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/home/coverage
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/coverages
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/coverages#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/coverages
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/discounts
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/coverages#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/discounts#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/discounts
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/compare
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/compare#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/commercial-auto/compare
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/collector-car-insurance
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/collector-car-insurance#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/collector-car-insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/motorcycle-insurance
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/motorcycle-insurance#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/motorcycle-insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/umbrella-insurance
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/umbrella-insurance#
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides/umbrella-insurance
+
+
+Status Code:    
+
+urlHost 
+URL:            https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=PA1
+Parent:         https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=PA1
+
+
+Status Code:    200
+URL:            http://www.pateachersquote.com
+Parent:         Main URL
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/utility/internet-policy-popup
+Parent:         https://www.plymouthrock.com/utility/internet-policy-popup
+
+
+Status Code:    200
+URL:            http://www.prac.com/utility/terms-popup
+Parent:         Main URL
+
+
+Status Code:    
+
+urlHost 
+URL:            https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=NJ71
+Parent:         https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=NJ71
+
+
+Status Code:    200
+URL:            http://NJARQUOTE.com
+Parent:         Main URL
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/
+Parent:         https://www.plymouthrock.com/
+
+
+Status Code:    200
+URL:            http://www.bunkerhillins.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/insurance-101/covid-19
+Parent:         http://www.bunkerhillins.com
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/find-agent
+Parent:         https://www.plymouthrock.com/resource-center/insurance-101/covid-19
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/quickpay
+Parent:         https://www.plymouthrock.com/find-agent
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/mypolicy
+Parent:         https://www.plymouthrock.com/find-agent
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/contact-us
+Parent:         https://www.plymouthrock.com/find-agent
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/
+Parent:         https://www.plymouthrock.com/contact-us
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/#
+Parent:         https://www.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance
+Parent:         https://www.plymouthrock.com/#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance#
+Parent:         https://www.plymouthrock.com/insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/auto
+Parent:         https://www.plymouthrock.com/insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/auto#
+Parent:         https://www.plymouthrock.com/insurance/auto
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/commercialauto
+Parent:         https://www.plymouthrock.com/insurance/auto#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/commercialauto#
+Parent:         https://www.plymouthrock.com/insurance/commercialauto
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/motorcycle
+Parent:         https://www.plymouthrock.com/insurance/commercialauto#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/motorcycle#
+Parent:         https://www.plymouthrock.com/insurance/motorcycle
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/home
+Parent:         https://www.plymouthrock.com/insurance/motorcycle#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/home#
+Parent:         https://www.plymouthrock.com/insurance/home
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/renters-insurance
+Parent:         https://www.plymouthrock.com/insurance/home#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/renters-insurance#
+Parent:         https://www.plymouthrock.com/insurance/renters-insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/condo-insurance
+Parent:         https://www.plymouthrock.com/insurance/renters-insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/condo-insurance#
+Parent:         https://www.plymouthrock.com/insurance/condo-insurance
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/umbrella
+Parent:         https://www.plymouthrock.com/insurance/condo-insurance#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/umbrella#
+Parent:         https://www.plymouthrock.com/insurance/umbrella
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/policy-perks
+Parent:         https://www.plymouthrock.com/insurance/umbrella#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/policy-perks#
+Parent:         https://www.plymouthrock.com/insurance/policy-perks
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/ways-to-save
+Parent:         https://www.plymouthrock.com/insurance/policy-perks#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/ways-to-save#
+Parent:         https://www.plymouthrock.com/insurance/ways-to-save
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/sports-programs
+Parent:         https://www.plymouthrock.com/insurance/ways-to-save#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/sports-programs#
+Parent:         https://www.plymouthrock.com/insurance/sports-programs
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/nj-teachers
+Parent:         https://www.plymouthrock.com/insurance/sports-programs#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/insurance/nj-teachers#
+Parent:         https://www.plymouthrock.com/insurance/nj-teachers
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/blog/insanely-smart-diy-home-projects-for-spring/
+Parent:         https://www.plymouthrock.com/insurance/nj-teachers#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/blog/insanely-smart-diy-home-projects-for-spring/#main
+Parent:         https://www.plymouthrock.com/blog/insanely-smart-diy-home-projects-for-spring/
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/blog/insanely-smart-diy-home-projects-for-spring/#
+Parent:         https://www.plymouthrock.com/blog/insanely-smart-diy-home-projects-for-spring/#main
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims
+Parent:         https://www.plymouthrock.com/blog/insanely-smart-diy-home-projects-for-spring/#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims#
+Parent:         https://www.plymouthrock.com/claims
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/track
+Parent:         https://www.plymouthrock.com/claims#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/track#
+Parent:         https://www.plymouthrock.com/claims/track
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/auto-claims
+Parent:         https://www.plymouthrock.com/claims/track#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/auto-claims#
+Parent:         https://www.plymouthrock.com/claims/auto-claims
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/commercial-auto-claims
+Parent:         https://www.plymouthrock.com/claims/auto-claims#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/commercial-auto-claims#
+Parent:         https://www.plymouthrock.com/claims/commercial-auto-claims
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/home-claims
+Parent:         https://www.plymouthrock.com/claims/commercial-auto-claims#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/home-claims#
+Parent:         https://www.plymouthrock.com/claims/home-claims
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/pip
+Parent:         https://www.plymouthrock.com/claims/home-claims#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/pip#
+Parent:         https://www.plymouthrock.com/claims/pip
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/faqs
+Parent:         https://www.plymouthrock.com/claims/pip#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/faqs#
+Parent:         https://www.plymouthrock.com/claims/faqs
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/repairshop
+Parent:         https://www.plymouthrock.com/claims/faqs#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/repairshop#
+Parent:         https://www.plymouthrock.com/claims/repairshop
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/severe-weather-events
+Parent:         https://www.plymouthrock.com/claims/repairshop#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/severe-weather-events#
+Parent:         https://www.plymouthrock.com/resource-center/severe-weather-events
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/carpics-photo-appraisals
+Parent:         https://www.plymouthrock.com/resource-center/severe-weather-events#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/claims/carpics-photo-appraisals#
+Parent:         https://www.plymouthrock.com/claims/carpics-photo-appraisals
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center
+Parent:         https://www.plymouthrock.com/claims/carpics-photo-appraisals#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center#
+Parent:         https://www.plymouthrock.com/resource-center
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/manage-your-policy
+Parent:         https://www.plymouthrock.com/resource-center#
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/manage-your-policy#
+Parent:         https://www.plymouthrock.com/resource-center/manage-your-policy
+
+
+Status Code:    200
+URL:            https://www.plymouthrock.com/resource-center/customer-service
+Parent:         https://www.plymouthrock.com/resource-center/manage-your-policy#
+
+

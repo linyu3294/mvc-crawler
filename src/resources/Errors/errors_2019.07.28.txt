@@ -1,0 +1,5 @@
+Status Code:    500  HTTP error fetching URL
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides/auto/understanding-car-insurance-in-ma
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
