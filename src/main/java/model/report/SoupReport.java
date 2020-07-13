@@ -113,8 +113,8 @@ public class SoupReport {
     // Recipient's email ID needs to be mentioned.
     String to = "ylin@Plymouthrock.com";
     // CC Recipient's email ID needs to be mentioned.
-    String cc1 = "cuhlar@Plymouthrock.com";
-    String cc2 = "rstrohmenger@plymouthrock.com";
+    String cc1 = "ylin@Plymouthrock.com";
+    String cc2 = "ylin@Plymouthrock.com";
     // Sender's email ID needs to be mentioned
     String from = "Z@Plymouthrock.com";
     // Assuming you are sending email from localhost

@@ -3,6 +3,8 @@ package controller;
 import java.util.HashSet;
 
 import model.report.SoupReport;
+import model.soup.ISpider;
+import model.soup.QueueSpider;
 import model.soup.SoupSpider;
 
 /**
@@ -22,7 +24,7 @@ public class SoupController implements IController {
   public void run() {
     try {
       for (String baseUrl : baseUrls) {
-        SoupSpider spider = new SoupSpider(this.resourcesFolder);
+        ISpider spider = new QueueSpider(this.resourcesFolder);
         spider.crawl(baseUrl, "Main URL");
       }
     } catch (Exception e) {

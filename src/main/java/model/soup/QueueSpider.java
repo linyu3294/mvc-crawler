@@ -2,12 +2,15 @@ package model.soup;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * A QueueSpider class extends from AbstracSpider and is a sibling to SoupSpider. Some differences
@@ -16,15 +19,23 @@ import java.util.Queue;
  * was not available in SoupSpider.
  */
 public class QueueSpider extends AbstractSpider implements ISpider {
-LinkedList<String[]> queue;
+private String mainUrl;
+private LinkedList<String[]> queue;
 
 /**
  * Constructor for QueueSoup.
  */
-protected QueueSpider (String resourcesFolder) {
+public QueueSpider (String resourcesFolder) {
    super(resourcesFolder);
-   //
    queue = new LinkedList<String[]>();
+}
+
+private boolean isValidInScopeURL (String url, String domain) {
+   boolean isInScope = false;
+   if (isValidURL(url)) {
+      isInScope = url.contains(this.domain);
+   }
+   return isInScope;
 }
 
 /**
@@ -34,34 +45,36 @@ protected QueueSpider (String resourcesFolder) {
  */
 @Override
 public void crawl (String url, String parent) throws IOException {
-   setTestCoverage(url);
-   setPagesIgnored();
+   this.setTestCoverage(url);
+   this.setPagesIgnored();
+   queue.add(new String[]{url});
+ 
 
-   queue.add(new String[] {url, ""});
-   int pointer = 0;
-
-   while (!queue.isEmpty()) {
-
-      String pointedUrl = (queue.get(pointer) [0]);
-      Document document = Jsoup.connect( pointedUrl )
+   while (!queue.isEmpty() ) {
+      String pointedUrl = (queue.get(0) [0]);
+      Document document = Jsoup.connect(pointedUrl)
          .followRedirects(true)
          .timeout(60000)
          .get();
-      Elements children = document.select("a[href]");
+      Elements elements = document.select("a[href]");
 
-      String[][] childrenUrls = new String[children.size()][2];
-      for (int i = 0; i < children.size(); i++) {
-         childrenUrls[i][0] = children.get(i).baseUri();
+      HashSet dedupedElements = new LinkedHashSet(Arrays.asList(elements.toArray()));
+      Iterator<Element> it = dedupedElements.iterator();
+      while (it.hasNext()) {
+         String childUrl = getUrl(it.next());
+         if (isValidInScopeURL(childUrl, this.domain)
+            && !pagesVisited.contains(childUrl)) {
+            queue.add(new String[]{childUrl});
+         }
       }
-      queue.addAll(Arrays.asList(childrenUrls));
 
-      String exitChild = queue.poll()[0];
+      String exitChild = queue.get(0) [0];
+      queue.remove(0);
+      pagesVisited.add(exitChild);
       System.out.println(exitChild);
-
-      pointer ++;
    }
+   System.out.println("Finished this round");
 }
-
 
 }
 

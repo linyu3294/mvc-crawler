@@ -25,8 +25,8 @@ import java.util.Scanner;
  */
 public abstract class AbstractSpider implements ISpider{
   protected HashSet<String> pagesVisited;
-  private String domain;
-  private String resourcesFolder;
+  protected String domain;
+  protected String resourcesFolder;
 
   /**
    * constructor of AbstractSpider.
@@ -52,7 +52,10 @@ public abstract class AbstractSpider implements ISpider{
    */
   protected void setTestCoverage(String mainURL) throws IOException {
     try {
-      Document document = Jsoup.connect(mainURL).followRedirects(true).timeout(60000).get();
+      Document document =
+         Jsoup.connect(mainURL)
+         .followRedirects(true)
+            .timeout(60000).get();
       String parsedURL[] = document.location().split("/");
       if (parsedURL.length > 2) {
         this.domain = document.location();
