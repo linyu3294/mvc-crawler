@@ -31,11 +31,8 @@ public QueueSpider (String resourcesFolder) {
 }
 
 private boolean isValidInScopeURL (String url, String domain) {
-   boolean isInScope = false;
-   if (isValidURL(url)) {
-      isInScope = url.contains(this.domain);
-   }
-   return isInScope;
+   return
+      url.contains(this.domain) && isValidURL(url);
 }
 
 /**
@@ -45,6 +42,7 @@ private boolean isValidInScopeURL (String url, String domain) {
  */
 @Override
 public void crawl (String url, String parent) throws IOException {
+   this.setPagesIgnored();
    this.setTestCoverage(url);
    queue.add(url);
 
@@ -63,9 +61,9 @@ public void crawl (String url, String parent) throws IOException {
             .map(element -> getUrl((Element) element))
             .collect(Collectors.toSet());
 
-      Iterator<String> it = dedupedElements.iterator();
-      while (it.hasNext()) {
-         String childUrl = it.next();
+      Iterator<String> iter = dedupedElements.iterator();
+      while (iter.hasNext()) {
+         String childUrl = iter.next();
          if (isValidInScopeURL(childUrl, this.domain)
             && !pagesVisited.contains(childUrl)
             && !queue.contains(childUrl)
@@ -74,22 +72,15 @@ public void crawl (String url, String parent) throws IOException {
          }
       }
 
-
-//      HashSet dedupedElements = new LinkedHashSet(Arrays.asList(elements.toArray()));
-//      Iterator<Element> it = dedupedElements.iterator();
-//      while (it.hasNext()) {
-//         String childUrl = getUrl(it.next());
-//         if (isValidInScopeURL(childUrl, this.domain)
-//            && !pagesVisited.contains(childUrl)) {
-//            queue.add(new String[]{childUrl});
-//         }
-//      }
-
       String exitChild = queue.get(0);
+
       queue.remove(0);
       pagesVisited.add(exitChild);
       System.out.println(exitChild);
+
    }
+
+
    System.out.println("Finished this round");
 }
 
