@@ -7,10 +7,10 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.LinkedList;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * A QueueSpider class extends from AbstracSpider and is a sibling to SoupSpider. Some differences
@@ -20,14 +20,14 @@ import java.util.LinkedList;
  */
 public class QueueSpider extends AbstractSpider implements ISpider {
 private String mainUrl;
-private LinkedList<String[]> queue;
+private LinkedList<String> queue;
 
 /**
  * Constructor for QueueSoup.
  */
 public QueueSpider (String resourcesFolder) {
    super(resourcesFolder);
-   queue = new LinkedList<String[]>();
+   queue = new LinkedList<String>();
 }
 
 private boolean isValidInScopeURL (String url, String domain) {
@@ -40,35 +40,52 @@ private boolean isValidInScopeURL (String url, String domain) {
 
 /**
  * QueueSpider can crawl a url and its children and verify their contents. QueueSoup uses a Queue
- * with a breadth-first-search recursive strategy as opposed to depth-first-search strategy
- * implemented in SoupSpider.
+ * with a breadth-first-search non-recursive strategy as opposed to depth-first-search recursive
+ * strategy implemented in SoupSpider.
  */
 @Override
 public void crawl (String url, String parent) throws IOException {
    this.setTestCoverage(url);
-   this.setPagesIgnored();
-   queue.add(new String[]{url});
- 
+   queue.add(url);
 
-   while (!queue.isEmpty() ) {
-      String pointedUrl = (queue.get(0) [0]);
+
+   while (!queue.isEmpty()) {
+      String pointedUrl = (queue.get(0));
       Document document = Jsoup.connect(pointedUrl)
          .followRedirects(true)
          .timeout(60000)
          .get();
       Elements elements = document.select("a[href]");
 
-      HashSet dedupedElements = new LinkedHashSet(Arrays.asList(elements.toArray()));
-      Iterator<Element> it = dedupedElements.iterator();
+      Set dedupedElements =
+         Arrays.asList(elements.toArray())
+            .stream()
+            .map(element -> getUrl((Element) element))
+            .collect(Collectors.toSet());
+
+      Iterator<String> it = dedupedElements.iterator();
       while (it.hasNext()) {
-         String childUrl = getUrl(it.next());
+         String childUrl = it.next();
          if (isValidInScopeURL(childUrl, this.domain)
-            && !pagesVisited.contains(childUrl)) {
-            queue.add(new String[]{childUrl});
+            && !pagesVisited.contains(childUrl)
+            && !queue.contains(childUrl)
+         ) {
+            queue.add(childUrl);
          }
       }
 
-      String exitChild = queue.get(0) [0];
+
+//      HashSet dedupedElements = new LinkedHashSet(Arrays.asList(elements.toArray()));
+//      Iterator<Element> it = dedupedElements.iterator();
+//      while (it.hasNext()) {
+//         String childUrl = getUrl(it.next());
+//         if (isValidInScopeURL(childUrl, this.domain)
+//            && !pagesVisited.contains(childUrl)) {
+//            queue.add(new String[]{childUrl});
+//         }
+//      }
+
+      String exitChild = queue.get(0);
       queue.remove(0);
       pagesVisited.add(exitChild);
       System.out.println(exitChild);
