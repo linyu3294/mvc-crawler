@@ -65,9 +65,10 @@ public abstract class AbstractSpider implements ISpider{
       log("\n\nurlHost ", domain, domain, "PagesChecked/pages_checked");
 //      System.out.println("______________________________________");
     } catch (IOException e) {
-      throw new IOException("The main URL is Down! " +
-              "Please Report a Defect."
-      );
+      log(" The Main URL is down", domain, domain, "Errors/errors");
+//      throw new IOException("The main URL is Down! " +
+//              "Please Report a Defect."
+//      );
     }
   }
 

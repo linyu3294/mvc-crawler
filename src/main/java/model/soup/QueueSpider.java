@@ -1,5 +1,6 @@
 package model.soup;
 
+import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -49,12 +50,25 @@ public void crawl (String url, String parent) throws IOException {
 
    while (!queue.isEmpty()) {
       String pointedUrl = (queue.get(0));
-      Document document = Jsoup.connect(pointedUrl)
+      Document document =null;
+
+      try{
+      document = Jsoup.connect(pointedUrl)
          .followRedirects(true)
          .timeout(60000)
-         .get();
-      Elements elements = document.select("a[href]");
+         .get();}
+      catch (HttpStatusException e) {
+         System.out.println(""
+            + "\n\nUnable to fetch url. \n"
+            + pointedUrl + "\n"
+            + "Status = " + e.getStatusCode() + ".\n\n");
+         String exitChild = queue.get(0);
+         queue.remove(0);
+         pagesVisited.add(exitChild);
+         continue;
+      }
 
+      Elements elements = document.select("a[href]");
       Set dedupedElements =
          Arrays.asList(elements.toArray())
             .stream()
@@ -73,13 +87,10 @@ public void crawl (String url, String parent) throws IOException {
       }
 
       String exitChild = queue.get(0);
-
       queue.remove(0);
       pagesVisited.add(exitChild);
       System.out.println(exitChild);
-
    }
-
 
    System.out.println("Finished this round");
 }
