@@ -39,8 +39,16 @@ public abstract class AbstractSpider implements ISpider{
     this.domain = "";
   }
 
+/**
+ *
+ * @return
+ */
+@Override
+public String getResourcesFolderPath () {
+  return this.resourcesFolder;
+}
 
-  /**
+/**
    * Defines the range of crawl and saves to this.domain. Once the test starts,
    * setTestCoverage(url) is called only during, the first instance crawl(url) is called.
    * SetTestCoverage(url) will define this.domain. This.domain is used to limit the

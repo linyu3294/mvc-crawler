@@ -17,8 +17,8 @@ public class SoupSpider extends AbstractSpider {
 /**
  * This is the constructor of SoupSpider Class.
  */
-public SoupSpider (String resourcesFolder) {
-   super(resourcesFolder);
+public SoupSpider (String resourcesFolderPath) {
+   super(resourcesFolderPath);
 }
 
 

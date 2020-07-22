@@ -1,19 +1,17 @@
 package controller;
 
 import java.io.IOException;
+import java.util.Iterator;
 
-/**
- * this is an interface for implement various types of url_crawler models.
- */
+import model.soup.ISpider;
+import view.IEmail;
+
 public interface IController {
-  /**
-   * This method runs the model, which will invoke a list of urls to be checked and run a ISpider
-   * object of a specified sort to recursively check the contents of the url and its children.
-   */
-  void run();
-
-  /**
-   * reports the result.
-   */
-  void report() throws IOException;
+void run (ISpider spider);
+String appendReportHeader (String emailStr);
+String appendReportListURLs (String emailStr);
+String appendReportPassFails (String emailStr);
+String appendReportTail (String emailStr);
+String createReport ();
+void sendReportInEmail (IEmail email) throws IOException;
 }

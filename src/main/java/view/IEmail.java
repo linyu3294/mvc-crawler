@@ -1,4 +1,4 @@
-package view.report;
+package view;
 
 import java.util.List;
 

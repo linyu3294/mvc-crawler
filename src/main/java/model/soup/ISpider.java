@@ -12,4 +12,10 @@ public interface ISpider {
  * QueueSpider implements a breadth first search method with a queue.
  */
 void crawl (String url, String parent) throws IOException;
+
+/**
+ * This method returns the path to the project's resource folder
+ * @return String that represents the path to the project's resource folder;
+ */
+String getResourcesFolderPath ();
 }

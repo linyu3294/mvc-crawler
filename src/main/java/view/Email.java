@@ -1,11 +1,6 @@
-package view.report;
+package view;
 
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
@@ -19,7 +14,6 @@ import javax.mail.MessagingException;
 import javax.mail.Multipart;
 import javax.mail.Session;
 import javax.mail.Transport;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
@@ -90,5 +84,7 @@ public Email setAttachment (String attachmentPath, String newName) throws Messag
 public void send() throws MessagingException {
    Transport.send(message);
 }
+
+
 
 }

@@ -1,0 +1,87 @@
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    200
+URL:            http://www.prac.com/aarp
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/mypolicy
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/quickpay
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com/#
+Parent:         https://aarp.plymouthrock.com/
+
+
+Status Code:    200
+URL:            https://aarp.plymouthrock.com#
+Parent:         http://www.prac.com/aarp
+
+
+Status Code:    200
+URL:            http://www.stsgi.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            http://www.prac.com
+Parent:         Main URL
+
+
+Status Code:    500
+URL:            http://newpv02-plymouthrock/_homenew
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            http://www.pateachersquote.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            http://www.prac.com/utility/terms-popup
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            http://NJARQUOTE.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            http://www.bunkerhillins.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            http://www.pilgrimins.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            http://njrealtorsrock.com
+Parent:         Main URL
+
+
+Status Code:    200
+URL:            https://pracblog.com/
+Parent:         Main URL
+
+
