@@ -8,6 +8,7 @@ import view.IEmail;
 
 public interface IController {
 void run (ISpider spider);
+String getDateStamp ();
 String appendReportHeader (String emailStr);
 String appendReportListURLs (String emailStr);
 String appendReportPassFails (String emailStr);

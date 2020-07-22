@@ -1,6 +1,7 @@
 package view;
 
 
+import java.io.File;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
@@ -34,8 +35,8 @@ public Email (String host){
 }
 
 
-public Email setSubject (String subject, String dateStamp)  throws MessagingException{
-   message.setSubject(subject + dateStamp);
+public Email setSubject (String subject)  throws MessagingException{
+   message.setSubject(subject);
    return this;
 }
 
@@ -69,14 +70,17 @@ public Email setEmailBody (String msg) throws MessagingException {
 }
 
 public Email setAttachment (String attachmentPath, String newName) throws MessagingException {
-   //Add Attachment to Multi-Body Part
-   BodyPart attachement = new MimeBodyPart();
-   String filename1 = attachmentPath;
-   DataSource source = new FileDataSource(attachmentPath);
-   attachement.setDataHandler(new DataHandler(source));
-   attachement.setFileName(newName);
-   multipart.addBodyPart(attachement);
-   message.setContent(multipart);
+   boolean fileExist = new File(attachmentPath).exists();
+   if (fileExist) {
+      //Add Attachment to Multi-Body Part
+      BodyPart attachement = new MimeBodyPart();
+      String filename1 = attachmentPath;
+      DataSource source = new FileDataSource(attachmentPath);
+      attachement.setDataHandler(new DataHandler(source));
+      attachement.setFileName(newName);
+      multipart.addBodyPart(attachement);
+      message.setContent(multipart);
+   }
    return this;
 }
 

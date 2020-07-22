@@ -64,7 +64,7 @@ public class SoupReport {
     totalChecked = 0;
     BufferedReader br = new BufferedReader(
             new FileReader(
-                    resourcesFolder + "PagesChecked/pages_checked_" + d + ".txt")
+                    resourcesFolder + "pagesChecked/pages_checked_" + d + ".txt")
     );
     String line;
     while ((line = br.readLine()) != null) {
@@ -142,12 +142,12 @@ public class SoupReport {
       Multipart multipart = new MimeMultipart();
       multipart.addBodyPart(messageBodyPart0);
 
-      boolean fileExist = new File(resourcesFolder + "Errors/errors_" + d + ".txt").exists();
+      boolean fileExist = new File(resourcesFolder + "errors/errors_" + d + ".txt").exists();
       if (fileExist) {
         // Attach Errors text Report if there is any
         BodyPart messageBodyPart1 = new MimeBodyPart();
         messageBodyPart1 = new MimeBodyPart();
-        String filename = resourcesFolder + "Errors/errors_" + d + ".txt";
+        String filename = resourcesFolder + "errors/errors_" + d + ".txt";
         DataSource source = new FileDataSource(filename);
         messageBodyPart1.setDataHandler(new DataHandler(source));
         messageBodyPart1.setFileName("Errors" + "_" + d + ".txt");
@@ -157,7 +157,7 @@ public class SoupReport {
 
       // Attach all checked urls text report.
       BodyPart messageBodyPart2 = new MimeBodyPart();
-      String filename2 = resourcesFolder + "PagesChecked/pages_checked_" + d + ".txt";
+      String filename2 = resourcesFolder + "pagesChecked/pages_checked_" + d + ".txt";
       DataSource source2 = new FileDataSource(filename2);
       messageBodyPart2.setDataHandler(new DataHandler(source2));
       messageBodyPart2.setFileName("Public Websites Regression Results" + "_" + d + ".txt");

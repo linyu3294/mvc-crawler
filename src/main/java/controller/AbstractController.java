@@ -39,13 +39,17 @@ protected String newDateStamp () {
    return scriptDateTime.format(date);
 }
 
+@Override
+public String getDateStamp () {
+   return this.dateStamp;
+}
 
 @Override
 public void run (ISpider spider) {
    this.resourcesFolderPath = spider.getResourcesFolderPath();
    try {
       for (String baseUrl : baseUrls) {
-//         spider.crawl(baseUrl, "Main URL");
+         spider.crawl(baseUrl, "Main URL");
       }
    } catch (Exception e) {
       e.printStackTrace();
@@ -54,22 +58,20 @@ public void run (ISpider spider) {
 
 @Override
 public String appendReportHeader (String emailStr) {
-   String [] str = {emailStr};
-   str[0] = str[0] + "Good Morning,   \n\n";
-   str[0] = str[0] + "Here is a Summary of Today's Results:\n\n";
-   str[0] = str[0] + "List of Base URLs Checked:\n";
-   return str [0];
+   return emailStr
+      + "Good Morning,\n\n"
+      + "Here is a Summary of Today's Results:\n\n"
+      + "List of Base URLs Checked:\n";
 }
 
 @Override
 public String appendReportListURLs (String emailStr) {
    Set set = statusCodeMap.entrySet();
    Iterator iter = set.iterator();
-   String [] str = {emailStr};
    for (String temp : this.baseUrls) {
-      str[0] = str[0] + temp + "\n";
+      emailStr = emailStr + temp + "\n";
    }
-   return str [0];
+   return emailStr;
 }
 
 
@@ -77,29 +79,29 @@ public String appendReportListURLs (String emailStr) {
 public String appendReportPassFails (String emailStr) {
    Set set = statusCodeMap.entrySet();
    Iterator iter = set.iterator();
-   String [] str = {emailStr};
-   str[0] = str[0] + "\n\n   Total Number of Sites Checked: " + this.totalChecked + "\n";
+   emailStr = emailStr + "\n\n   Total Number of Sites Checked: " + this.totalChecked + "\n";
    while (iter.hasNext()) {
       Map.Entry mentry = (Map.Entry) iter.next();
-      str[0] = str[0]
-         + "   Number of Sites returning a \"" + mentry.getKey() + ""
+      emailStr = emailStr
+         + "   Number of Sites returning a \"" + mentry.getKey()
          + "\" Response Code:   " + mentry.getValue().toString() + "\n";
    }
-   return str [0];
+   return emailStr;
 }
+
 
 @Override
 public String appendReportTail (String emailStr) {
-   String [] str = {emailStr};
-   str[0] = str[0] + "\n\nSites that return a non-\"200\" are documented in errors.txt. " +
+   return emailStr
+      + "\n\nSites that return a non-\"200\" are documented in errors.txt. " +
       "\n\nThank you! \nYu Lin";
-   return str [0];
 }
+
 
 @Override
 public String createReport () {
-   String str ="";
-   str = appendReportHeader( str);
+   String str = "";
+   str = appendReportHeader(str);
    str = appendReportListURLs(str);
    str = appendReportPassFails(str);
    str = appendReportTail(str);

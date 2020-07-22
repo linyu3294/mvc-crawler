@@ -17,9 +17,9 @@ public class Main {
   public static void main(String [] args) throws IOException {
 
     HashSet<String> baseUrls = new HashSet<>();
-    baseUrls.add("http://newpv02-plymouthrock/_homenew");
+//    baseUrls.add("http://newpv02-plymouthrock/_homenew");
+//    baseUrls.add("http://newpv02-plymouthrock/");
     baseUrls.add("https://pracblog.com/");
-    baseUrls.add("http://newpv02-plymouthrock/");
     baseUrls.add("https://www.plymouthrock.com");
     baseUrls.add("http://www.pilgrimins.com");
     baseUrls.add("http://www.bunkerhillins.com");
@@ -38,7 +38,6 @@ public class Main {
     ISpider soupSpider = new SoupSpider(resourcesFolderPath);
 
     IController controller = new SoupController(baseUrls);
-
     controller.run(soupSpider);
 
     List<String> listOfCCs = new ArrayList<String>();
@@ -46,19 +45,26 @@ public class Main {
     listOfCCs.add("ylin@plymouthrock.com");
 
     String report = controller.createReport();
-
+    String dateStamp = controller.getDateStamp();
     IEmail email = new Email("PRCRELAY.PRCINS.NET");
     try {
       email = email
          .setSender("Z@plymouthrock.com")
          .setReceiver("ylin@plymouthrock.com")
          .setListOfCCs(listOfCCs)
-         .setSubject("Test", "")
-         .setAttachment("src/resources/Errors/errors_2019.07.08.txt", "Test 3.txt")
-         .setAttachment("src/resources/Errors/errors_2019.07.08.txt", "Test 4.txt")
-         .setAttachment("src/resources/Errors/errors_2019.07.08.txt", "Test 5.txt")
+         .setSubject("Public_Website_Regression_Results_" + dateStamp)
+         .setAttachment(
+            resourcesFolderPath +"/errors/errors_" + dateStamp + ".txt",
+            "errors_" + dateStamp + ".txt")
+         .setAttachment(
+            resourcesFolderPath + "/pagesChecked/pages_checked_" + dateStamp +".txt",
+            "pages_checked_" + dateStamp + ".txt")
+         .setAttachment(
+            resourcesFolderPath + "/pages_ignored.txt",
+            "pages_ignored.txt")
          .setEmailBody(report);
-    }catch (Exception e){System.out.println("hello");}
+    }catch (Exception ignored){}
+
 
     controller.sendReportInEmail(email);
 

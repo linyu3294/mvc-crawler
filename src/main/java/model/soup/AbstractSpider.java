@@ -70,10 +70,10 @@ public String getResourcesFolderPath () {
       } else {
         this.domain = parsedURL[2];
       }
-      log("\n\nurlHost ", domain, domain, "PagesChecked/pages_checked");
+      log("\n\nurlHost ", domain, domain, "pagesChecked/pages_checked");
 //      System.out.println("______________________________________");
     } catch (IOException e) {
-      log(" The Main URL is down", domain, domain, "Errors/errors");
+      log(" The Main URL is down", domain, domain, "errors/errors");
 //      throw new IOException("The main URL is Down! " +
 //              "Please Report a Defect."
 //      );
@@ -114,13 +114,13 @@ public String getResourcesFolderPath () {
     if (pagesVisited.add(url)) {
       statusCode = getResponseCode(url, parent);
       if (statusCode == 0) {
-        log(statusCode + "", url, parent, "PagesChecked/pages_checked");
+        log(statusCode + "", url, parent, "pagesChecked/pages_checked");
         statusConfirmed = false;
       } else if (statusCode != 200) {
-        log(statusCode + "", url, parent, "PagesChecked/pages_checked");
+        log(statusCode + "", url, parent, "pagesChecked/pages_checked");
         statusConfirmed = false;
       } else {
-        log(statusCode + "", url, parent, "PagesChecked/pages_checked");
+        log(statusCode + "", url, parent, "pagesChecked/pages_checked");
         statusConfirmed = true;
       }
     }
@@ -144,20 +144,20 @@ public String getResourcesFolderPath () {
               .execute();
       statusCode = response.statusCode();
       if (statusCode != 200) {
-        log(statusCode + "", url, parent, "Errors/errors");
+        log(statusCode + "", url, parent, "errors/errors");
       }
     } catch (HttpStatusException e) {
       statusCode = e.getStatusCode();
-      log(e.getStatusCode() + "  " + e.getMessage(), url, parent, "Errors/errors");
+      log(e.getStatusCode() + "  " + e.getMessage(), url, parent, "errors/errors");
     } catch (UnsupportedMimeTypeException e) {
       log("Failed to get Response. Due to a runtime UnsupportedMimeTypeException.\n"
-              + "                " + e.getMessage(), url, parent, "Errors/errors");
+              + "                " + e.getMessage(), url, parent, "errors/errors");
     } catch (IOException e) {
       log("Failed to get Response. Due to a runtime IOException.\n"
-              + "                " + e.getMessage(), url, parent, "Errors/errors");
+              + "                " + e.getMessage(), url, parent, "errors/errors");
     } catch (IllegalArgumentException e) {
       log("Failed to get Response. Due to a runtime IlegalArgumentException.\n"
-              + "                " + e.getMessage() + "\n", url, parent, "Errors/errors");
+              + "                " + e.getMessage() + "\n", url, parent, "errors/errors");
     }
     return statusCode;
   }

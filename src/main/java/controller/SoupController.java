@@ -23,7 +23,7 @@ private void writeCrawlerResultToMap () throws IOException {
    BufferedReader crawlerResultLog = openCrawlerResultLog(
       ""
          + this.resourcesFolderPath
-         + "PagesChecked/pages_checked_"
+         + "pagesChecked/pages_checked_"
          + newDateStamp()
          + ".txt");
    mapAllStatusCodes(crawlerResultLog);

@@ -3,7 +3,7 @@ package view;
 import java.util.List;
 
 public interface IEmail {
-IEmail setSubject (String subject, String dateStamp) throws Exception;
+IEmail setSubject (String subject) throws Exception;
 IEmail setSender (String sender) throws Exception;
 IEmail setReceiver (String receiver) throws Exception;
 IEmail setListOfCCs (List<String> listOfCCs) throws Exception;
