@@ -1,4 +1,4 @@
-package model.report;
+package view.report;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -39,8 +39,7 @@ public class SoupReport {
     this.resourcesFolder = resourcesFolder;
   }
 
-  public String formatDate() {
-    // formate Date
+  private String formatDate() {
     Date date = new Date();
     Calendar c = Calendar.getInstance();
     date = c.getTime();
@@ -50,7 +49,6 @@ public class SoupReport {
 
   private void count(Integer responseCode) {
     totalChecked++;
-
     Integer attempt = results.get(responseCode);
     if (attempt != null) {
       results.put(responseCode, attempt + 1);
@@ -89,7 +87,6 @@ public class SoupReport {
     str[0] = str[0] + "List of Base URLs Checked:\n";
     Set set = results.entrySet();
     Iterator iter = set.iterator();
-
 
     for (String temp : baseUrls) {
       str[0] = str[0] + temp + "\n";

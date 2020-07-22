@@ -8,11 +8,8 @@ import controller.SoupController;
 public class Main {
   public final static String resourcesPath = "src/resources/";
 
-  /**
-   * This is the Main Test. It's included in the testng.xml.
-   */
-  @Test
-  public static void main() {
+
+  public static void main(String [] args) {
     HashSet<String> baseUrls = new HashSet<>();
     baseUrls.add("http://newpv02-plymouthrock/_homenew");
     baseUrls.add("https://pracblog.com/");

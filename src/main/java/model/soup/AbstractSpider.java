@@ -78,7 +78,6 @@ public abstract class AbstractSpider implements ISpider{
    * At Initial Set up. Appends any url that is in the pages_ignored.txt to pagesVisited Set.
    */
   protected void setPagesIgnored() {
-
     String[] pagesIgnoredStr;
     BufferedReader reader;
     try {
@@ -132,9 +131,6 @@ public abstract class AbstractSpider implements ISpider{
     int statusCode = 0;
     try {
       response = Jsoup.connect(url)
-//              .userAgent("Mozilla/5.0 " +
-//                      "(Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) " +
-//                      "Gecko/20070725 Firefox/2.0.0.6")
               .followRedirects(true)
               .timeout(60000)
               .execute();
@@ -176,12 +172,15 @@ public abstract class AbstractSpider implements ISpider{
 
 
   /**
-   * This private helper method logs any FAILED Response status code of a url.
+   * This private helper method logs any  Response status code of a url.
    *
-   * @param url       - a string that represents the address of an url.
    * @param errorCode - the HTTP Status code OTHER THAN 200.
+   * @param url       - a string that represents the address of an url.
+   * @param parent    - parent url.
+   * @param doc       - the path of the text document recieving the log.
+   * @param misc      - any trailing material that needs to be logged for each entry.
    */
-  protected void log(String errorCode, String url, String parent, String doc) {
+  protected void log(String errorCode, String url, String parent, String doc, String... misc) {
     Date date = new Date();
     Calendar c = Calendar.getInstance();
     date = c.getTime();

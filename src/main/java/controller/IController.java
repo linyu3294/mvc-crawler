@@ -1,5 +1,7 @@
 package controller;
 
+import java.io.IOException;
+
 /**
  * this is an interface for implement various types of url_crawler models.
  */
@@ -13,5 +15,5 @@ public interface IController {
   /**
    * reports the result.
    */
-  void report();
+  void report() throws IOException;
 }
