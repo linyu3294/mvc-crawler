@@ -39,13 +39,15 @@ protected String newDateStamp () {
    return scriptDateTime.format(date);
 }
 
+
 @Override
 public String getDateStamp () {
    return this.dateStamp;
 }
 
+
 @Override
-public void run (ISpider spider) {
+public void run (ISpider spider) throws IOException {
    this.resourcesFolderPath = spider.getResourcesFolderPath();
    try {
       for (String baseUrl : baseUrls) {
@@ -56,6 +58,7 @@ public void run (ISpider spider) {
    }
 }
 
+
 @Override
 public String appendReportHeader (String emailStr) {
    return emailStr
@@ -63,6 +66,7 @@ public String appendReportHeader (String emailStr) {
       + "Here is a Summary of Today's Results:\n\n"
       + "List of Base URLs Checked:\n";
 }
+
 
 @Override
 public String appendReportListURLs (String emailStr) {
@@ -107,6 +111,7 @@ public String createReport () {
    str = appendReportTail(str);
    return str;
 }
+
 
 @Override
 public void sendReportInEmail (IEmail email) throws IOException {

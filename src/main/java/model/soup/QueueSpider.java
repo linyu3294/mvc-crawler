@@ -8,6 +8,7 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Set;
@@ -20,8 +21,9 @@ import java.util.stream.Collectors;
  * was not available in SoupSpider.
  */
 public class QueueSpider extends AbstractSpider implements ISpider {
-private String mainUrl;
 private LinkedList<String> queue;
+private HashMap<String, String> parentMap;
+private HashMap<String, String[]> queueSpiderModel;
 
 /**
  * Constructor for QueueSoup.
@@ -29,11 +31,8 @@ private LinkedList<String> queue;
 public QueueSpider (String resourcesFolder) {
    super(resourcesFolder);
    queue = new LinkedList<String>();
-}
-
-private boolean isValidInScopeURL (String url, String domain) {
-   return
-      url.contains(this.domain) && isValidURL(url);
+   parentMap = new HashMap<String, String>();
+   queueSpiderModel = new HashMap<String, String[]>();
 }
 
 /**
@@ -47,54 +46,112 @@ public void crawl (String url, String parent) throws IOException {
    this.setTestCoverage(url);
    queue.add(url);
 
-
    while (!queue.isEmpty()) {
       String pointedUrl = (queue.get(0));
-      Document document =null;
+      Document document = null;
+      parent = pointedUrl;
 
-      try{
-      document = Jsoup.connect(pointedUrl)
-         .followRedirects(true)
-         .timeout(60000)
-         .get();}
-      catch (HttpStatusException e) {
-         System.out.println(""
-            + "\n\nUnable to fetch url. \n"
-            + pointedUrl + "\n"
-            + "Status = " + e.getStatusCode() + ".\n\n");
-         String exitChild = queue.get(0);
-         queue.remove(0);
-         pagesVisited.add(exitChild);
+      try {
+         document = getDocument(pointedUrl);
+      } catch (HttpStatusException e) {
+         appendQueueSpiderModel(pointedUrl, parent);
+//         System.out.println(""
+//            + "\n\nUnable to fetch url. \n"
+//            + pointedUrl + "\n"
+//            + "Status = " + e.getStatusCode() + ".\n\n");
+         getStatusCodeAndResponseTime(pointedUrl);
          continue;
       }
 
       Elements elements = document.select("a[href]");
-      Set dedupedElements =
-         Arrays.asList(elements.toArray())
-            .stream()
-            .map(element -> getUrl((Element) element))
-            .collect(Collectors.toSet());
+      Set set = dedupeDiscoveredChildren(elements);
+      addValidChildrenToQueue(set, pointedUrl);
 
-      Iterator<String> iter = dedupedElements.iterator();
-      while (iter.hasNext()) {
-         String childUrl = iter.next();
-         if (isValidInScopeURL(childUrl, this.domain)
-            && !pagesVisited.contains(childUrl)
-            && !queue.contains(childUrl)
-         ) {
-            queue.add(childUrl);
-         }
-      }
-
-      String exitChild = queue.get(0);
-      queue.remove(0);
-      pagesVisited.add(exitChild);
-      System.out.println(exitChild);
+      String exitChild = popVisitedChildFromQueue();
+      appendQueueSpiderModel(exitChild, parent);
    }
-
-   System.out.println("Finished this round");
 }
 
+
+public HashMap<String, String[]> getQueueSpiderModel () {
+   return queueSpiderModel;
+}
+
+
+private void appendQueueSpiderModel (String exitChild, String parent) throws IOException {
+   long[] statusCodeAndResponseTime = getStatusCodeAndResponseTime(exitChild);
+   String statusCode = String.valueOf(statusCodeAndResponseTime[0]);
+   String responseMiliSec = String.valueOf(statusCodeAndResponseTime[1]);
+   queueSpiderModel.put(exitChild,
+      new String[]{parent, statusCode, responseMiliSec}
+   );
+   System.out.println("      "
+      + statusCode + "       "
+      + responseMiliSec + "      "
+      + "url: " + exitChild + "     "
+      + "parent: " + parent + "     "
+      );
+}
+
+
+private long[] getStatusCodeAndResponseTime (String url) throws IOException {
+   long startTime = System.nanoTime();
+   long status = Jsoup.connect(url)
+      .followRedirects(true)
+      .timeout(60000)
+      .execute()
+      .statusCode();
+   long endTime = System.nanoTime();
+   long responseInMiliSec = (endTime - startTime) / 1000000;
+   return new long[]{status, responseInMiliSec};
+}
+
+
+private Document getDocument (String url) throws IOException {
+   return Jsoup.connect(url)
+      .followRedirects(true)
+      .timeout(60000)
+      .get();
+}
+
+
+private boolean isValidInScopeURL (String url, String domain) {
+   return
+      url.contains(this.domain) && isValidURL(url);
+}
+
+
+private String popVisitedChildFromQueue () {
+   String exitChild = queue.get(0);
+   pagesVisited.add(exitChild);
+   queue.remove(0);
+   return exitChild;
+}
+
+
+private Set dedupeDiscoveredChildren (Elements elements) {
+   Set dedupedElements =
+      Arrays.asList(elements.toArray())
+         .stream()
+         .map(element -> getUrl((Element) element))
+         .collect(Collectors.toSet());
+   return dedupedElements;
+}
+
+
+private void addValidChildrenToQueue (Set set, String parentUrl) {
+   Iterator<String> iter = set.iterator();
+   while (iter.hasNext()) {
+      String childUrl = iter.next();
+      if (isValidInScopeURL(childUrl, this.domain)
+         && !pagesVisited.contains(childUrl)
+         && !queue.contains(childUrl)
+      ) {
+         parentMap.put(childUrl, parentUrl);
+         queue.add(childUrl);
+      }
+   }
+}
 
 
 }

@@ -4,8 +4,10 @@ import java.util.HashSet;
 import java.util.List;
 
 import controller.IController;
+import controller.QueueController;
 import controller.SoupController;
 import model.soup.ISpider;
+import model.soup.QueueSpider;
 import model.soup.SoupSpider;
 import view.Email;
 import view.IEmail;
@@ -35,9 +37,9 @@ public class Main {
     baseUrls.add("http://www.pateachersquote.com");
     baseUrls.add("http://njrealtorsrock.com");
 
-    ISpider soupSpider = new SoupSpider(resourcesFolderPath);
+    ISpider soupSpider = new QueueSpider(resourcesFolderPath);
 
-    IController controller = new SoupController(baseUrls);
+    IController controller = new QueueController(baseUrls);
     controller.run(soupSpider);
 
     List<String> listOfCCs = new ArrayList<String>();

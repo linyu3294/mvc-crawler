@@ -24,7 +24,7 @@ private void writeCrawlerResultToMap () throws IOException {
       ""
          + this.resourcesFolderPath
          + "pagesChecked/pages_checked_"
-         + newDateStamp()
+         + this.dateStamp
          + ".txt");
    mapAllStatusCodes(crawlerResultLog);
 }

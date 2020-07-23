@@ -7,7 +7,7 @@ import model.soup.ISpider;
 import view.IEmail;
 
 public interface IController {
-void run (ISpider spider);
+void run (ISpider spider) throws IOException;
 String getDateStamp ();
 String appendReportHeader (String emailStr);
 String appendReportListURLs (String emailStr);
