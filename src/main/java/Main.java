@@ -54,8 +54,8 @@ public static void main (String[] args) throws IOException {
       }
    }
 
-   ISpider spider = ModelFactory.make(crawlerType, resourcesFolderPath);
    IController controller = ControllerFactory.make(crawlerType, baseUrls);
+   ISpider spider = ModelFactory.make(crawlerType, resourcesFolderPath);
    controller.run(spider);
 
    List<String> listOfCCs = new ArrayList<String>();

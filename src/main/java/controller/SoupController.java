@@ -50,16 +50,6 @@ private void mapAllStatusCodes (BufferedReader logOfStatusCodes) throws IOExcept
    }
 }
 
-
-private void evalResponseAndWriteToMap (Integer statusCode) {
-   this.totalChecked++;
-   Integer attempt = this.statusCodeMap.get(statusCode);
-   if (attempt != null) {
-      statusCodeMap.put(statusCode, attempt + 1);
-   } else {
-      statusCodeMap.put(statusCode, 1);
-   }
-}
 }
 
 

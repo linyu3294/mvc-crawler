@@ -23,7 +23,10 @@ public QueueController (HashSet<String> baseUrls) throws IOException {
 @Override
 public void run (ISpider spider) throws IOException {
    this.resourcesFolderPath = spider.getResourcesFolderPath();
-   try{super.run(spider);}catch (Exception ignored) {}
+   try {
+      super.run(spider);
+   } catch (Exception ignored) {
+   }
    QueueSpider queueSpider = (QueueSpider) spider;
    this.queueSpiderModel = queueSpider.getQueueSpiderModel();
 
@@ -39,12 +42,17 @@ public void run (ISpider spider) throws IOException {
          statusCode, responseTimeInMiliSec, url, parent
       };
 
+      evalResponseAndWriteToMap(Integer.valueOf(statusCode));
       if (!statusCode.trim().equals("200")) {
          initErrorsCSV();
          errors.appendRow(csvEntry);
-      } else pagesCheckedFile.appendRow(csvEntry);
+      } else {
+         pagesCheckedFile.appendRow(csvEntry);
+      }
    }
 }
+
+
 
 
 private String[] buildTitle () {
