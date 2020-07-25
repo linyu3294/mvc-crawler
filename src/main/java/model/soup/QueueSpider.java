@@ -47,28 +47,25 @@ public void crawl (String url, String parent) throws IOException {
    queue.add(url);
 
    while (!queue.isEmpty()) {
-      String pointedUrl = (queue.get(0));
+      String firstOut = (queue.get(0));
       Document document = null;
-      parent = pointedUrl;
+      parent = firstOut;
 
       try {
-         document = getDocument(pointedUrl);
+         document = getDocument(firstOut);
       } catch (HttpStatusException e) {
-         appendQueueSpiderModel(pointedUrl, parent);
-//         System.out.println(""
-//            + "\n\nUnable to fetch url. \n"
-//            + pointedUrl + "\n"
-//            + "Status = " + e.getStatusCode() + ".\n\n");
-         getStatusCodeAndResponseTime(pointedUrl);
+         String exitChild = popVisitedChildFromQueue();
+         appendQueueSpiderModel(exitChild, parent);
+         getStatusCodeAndResponseTime(exitChild);
          continue;
       }
 
       Elements elements = document.select("a[href]");
       Set set = dedupeDiscoveredChildren(elements);
-      addValidChildrenToQueue(set, pointedUrl);
+      addValidChildrenToQueue(set, parent);
 
       String exitChild = popVisitedChildFromQueue();
-      appendQueueSpiderModel(exitChild, parent);
+      appendQueueSpiderModel(exitChild, parentMap.get(exitChild));
    }
 }
 

@@ -845,3 +845,59 @@ URL:            https://www.plymouthrock.com/
 Parent:         https://www.plymouthrock.com/
 
 
+Status Code:    
+
+urlHost 
+URL:            http://www.pilgrimins.com
+Parent:         http://www.pilgrimins.com
+
+
+Status Code:    
+
+urlHost 
+URL:            https://auto.plymouthrock.com/Realtors
+Parent:         https://auto.plymouthrock.com/Realtors
+
+
+Status Code:    
+
+urlHost 
+URL:            https://pracblog.com/
+Parent:         https://pracblog.com/
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/resource-center/pa-insurance-guides/home
+Parent:         https://www.plymouthrock.com/resource-center/pa-insurance-guides/home
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com
+Parent:         https://www.plymouthrock.com
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/utility/privacy-policy-popup
+Parent:         https://www.plymouthrock.com/utility/privacy-policy-popup
+
+
+Status Code:    
+
+urlHost 
+URL:            http://www.twinlightsins.com
+Parent:         http://www.twinlightsins.com
+
+

@@ -34,13 +34,13 @@ public static IEmail make (IController controller,
                + "/errors/errors_"
                + dateStamp
                + attachementFileType,
-            "errors_" + dateStamp + ".txt")
+            "errors_" + dateStamp + attachementFileType)
          .setAttachment(
             resourcesFolderPath
                + "/pagesChecked/pages_checked_"
                + dateStamp
                + attachementFileType,
-            "pages_checked_" + dateStamp + ".txt")
+            "pages_checked_" + dateStamp + attachementFileType)
          .setAttachment(
             resourcesFolderPath
                + "/pages_ignored.txt",

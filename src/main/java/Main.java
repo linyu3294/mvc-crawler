@@ -59,8 +59,8 @@ public static void main (String[] args) throws IOException {
    controller.run(spider);
 
    List<String> listOfCCs = new ArrayList<String>();
-   listOfCCs.add("ylin@plymouthrock.com");
-   listOfCCs.add("ylin@plymouthrock.com");
+   listOfCCs.add("rstrohmenger@plymouthrock.com");
+   listOfCCs.add("cuhlar@plymouthrock.com");
 
    String report = controller.createReport();
    String dateStamp = controller.getDateStamp();
