@@ -7,6 +7,9 @@ import model.soup.ISpider;
 import model.soup.QueueSpider;
 import model.soup.SoupSpider;
 
+/**
+ * A Factory used in main to instantiate a IController object.
+ */
 public class ControllerFactory {
    public static IController make (String crawlerType, HashSet <String>baseUrls)
       throws IOException {

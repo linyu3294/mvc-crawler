@@ -6,13 +6,17 @@ import controller.IController;
 import controller.QueueController;
 import controller.SoupController;
 
+/**
+ * Creates and configures a email.
+ * Used in Main.
+ */
 public class EmailFactory {
 
 public static IEmail make (IController controller,
                            List<String> listOfCCs,
                            String dateStamp,
                            String resourcesFolderPath,
-                           String report) {
+                           String report) throws Exception {
 
    String attachementFileType = "";
    if (controller instanceof QueueController) {
@@ -23,7 +27,7 @@ public static IEmail make (IController controller,
 
    IEmail email = new Email("PRCRELAY.PRCINS.NET");
 
-   try {
+
       email = email
          .setSender("Z@plymouthrock.com")
          .setReceiver("ylin@plymouthrock.com")
@@ -46,9 +50,7 @@ public static IEmail make (IController controller,
                + "/pages_ignored.txt",
             "pages_ignored.txt")
          .setEmailBody(report);
-   } catch (Exception ignored) {
-      throw new IllegalStateException("Failed to instantiate a Email object.");
-   }
+
    return email;
 }
 

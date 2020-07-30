@@ -16,15 +16,16 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
- * A QueueSpider class extends from AbstracSpider and is a sibling to SoupSpider. Some differences
- * are it uses a breadth-first-search strategy as opposed to depth-first-search. It also has an
- * additional feature that allows recording of each url loading time that it visits. This feature
- * was not available in SoupSpider.
+ * A QueueSpider class extends from AbstracSpider and is a sibling to SoupSpider. A key difference
+ * is that the QueueSpider uses a breadth-first-search strategy whereas the SoupSpider uses
+ * depth-first-search strategy. QueueSpider also has an additional feature that allows it to record
+ * the loading time each child url it crawls. This feature is not available in SoupSpider.
  */
 public class QueueSpider extends AbstractSpider implements ISpider {
 private LinkedList<String> queue;
 private HashMap<String, String> parentMap;
 private HashMap<String, String[]> queueSpiderModel;
+
 
 /**
  * Constructor for QueueSoup.
@@ -36,12 +37,12 @@ public QueueSpider (String resourcesFolder) {
    queueSpiderModel = new HashMap<String, String[]>();
 }
 
+
 /**
- * QueueSpider can crawl a url and its children and verify their contents. QueueSoup uses a Queue
- * with a breadth-first-search non-recursive strategy as opposed to depth-first-search recursive
- * strategy implemented in SoupSpider.
+ * QueueSpider can crawl a website and its children urls, verify their http status codes, and record
+ * DOM loading time. QueueSoup uses a breadth-first-search algorithm and a queue data structure.
  *
- * @param url    - The main root url.
+ * @param url    - The main website url.
  * @param parent - Not used. Slightly bad design, but trade benefit is saving a lot of unesscessary
  *               refactoring of code.
  */
@@ -68,6 +69,7 @@ public void crawl (String url, String parent) throws IOException {
       }
    }
 }
+
 
 /**
  * @return - The model of the collected result as a hashmap containing,  url as key, and String [3]

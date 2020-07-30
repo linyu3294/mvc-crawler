@@ -6,14 +6,18 @@ import java.io.IOException;
 import java.util.HashSet;
 
 /**
- * This is a class that implements interface IController. This controller class runs with a
+ * This is a class that implements IController. This controller class runs with a
  * SoupSpider model and uses the Email View. The controller keeps model and view seperate and
- * manages data flow between them. To give context, SoupSpider model employs JSoup's Html parsing
- * technology and checks the response code of a url at each iteration of the recursive crawl.
+ * manages data flow between them. To give context, SoupSpider model uses a recursive depths first
+ * search algorithm and checks the response code of a url at each iteration of the recursive crawl.
  */
-public class SoupController extends AbstractController {
+public class SoupController extends AbstractController implements  IController{
 
-
+/**
+ * A constructor for SoupControler. It supers AbstractController.
+ *
+ * @param baseUrls - A set of base urls that will passed to and used in model for crawling.
+ */
 public SoupController (HashSet<String> baseUrls) {
    super(baseUrls);
 }

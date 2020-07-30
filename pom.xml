@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.prcins.qa</groupId>
-    <artifactId>crawler</artifactId>
+    <artifactId>mvc-crawler</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>

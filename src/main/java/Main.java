@@ -5,7 +5,6 @@ import java.util.List;
 
 import controller.ControllerFactory;
 import controller.IController;
-import controller.QueueController;
 import model.soup.ISpider;
 import model.soup.ModelFactory;
 import view.EmailFactory;
@@ -65,14 +64,18 @@ public static void main (String[] args) throws IOException {
    String report = controller.createReport();
    String dateStamp = controller.getDateStamp();
 
-   IEmail email = EmailFactory.make(
-      controller,
-      listOfCCs,
-      dateStamp,
-      resourcesFolderPath,
-      report
-   );
 
-   controller.sendReportInEmail(email);
+   try {
+      IEmail email = EmailFactory.make(
+         controller,
+         listOfCCs,
+         dateStamp,
+         resourcesFolderPath,
+         report
+      );
+      controller.sendReportInEmail(email);
+   } catch (Exception e) {
+      e.printStackTrace();
+   }
 }
 }

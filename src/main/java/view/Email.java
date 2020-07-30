@@ -34,17 +34,34 @@ public Email (String host){
    this.multipart = new MimeMultipart();
 }
 
-
+/**
+ * Sets the email subject.
+ * @param subject - A String.
+ * @return - self.
+ * @throws Exception
+ */
 public Email setSubject (String subject)  throws MessagingException{
    message.setSubject(subject);
    return this;
 }
 
+/**
+ * Sets the sender of the email.
+ * @param sender - email of the sender.
+ * @return - self.
+ * @throws Exception
+ */
 public Email setSender (String sender)  throws MessagingException {
    this.message.setFrom(new InternetAddress(sender));
    return this;
 }
 
+/**
+ * Sets a list of ccd emails.
+ * @param listOfCCs - A List<String> that contains ccd emails.
+ * @return - self.
+ * @throws Exception
+ */
 public Email setReceiver (String receiver) throws MessagingException {
    this.message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiver));
    return this;

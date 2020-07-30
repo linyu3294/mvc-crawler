@@ -1,5 +1,9 @@
 package model.soup;
 
+
+/**
+ * A Factory used in main to instantiate an ISpider object.
+ */
 public class ModelFactory {
    public static ISpider make (String crawlerType, String resourcesFolderPath){
       ISpider spider =null;
