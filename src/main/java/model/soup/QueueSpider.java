@@ -2,6 +2,7 @@ package model.soup;
 
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
+import org.jsoup.UnsupportedMimeTypeException;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -39,6 +40,10 @@ public QueueSpider (String resourcesFolder) {
  * QueueSpider can crawl a url and its children and verify their contents. QueueSoup uses a Queue
  * with a breadth-first-search non-recursive strategy as opposed to depth-first-search recursive
  * strategy implemented in SoupSpider.
+ *
+ * @param url    - The main root url.
+ * @param parent - Not used. Slightly bad design, but trade benefit is saving a lot of unesscessary
+ *               refactoring of code.
  */
 @Override
 public void crawl (String url, String parent) throws IOException {
@@ -49,49 +54,73 @@ public void crawl (String url, String parent) throws IOException {
    while (!queue.isEmpty()) {
       String firstOut = (queue.get(0));
       Document document = null;
-      parent = firstOut;
 
       try {
          document = getDocument(firstOut);
-      } catch (HttpStatusException e) {
-         String exitChild = popVisitedChildFromQueue();
-         appendQueueSpiderModel(exitChild, parent);
-         getStatusCodeAndResponseTime(exitChild);
+         Elements elements = document.select("a[href]");
+         Set set = dedupeDiscoveredChildren(elements);
+         addValidChildrenToQueue(set, firstOut);
+      } catch (Exception e) {
          continue;
+      } finally {
+         popVisitedChildFromQueue();
+         appendQueueSpiderModel(firstOut, parentMap.get(firstOut));
       }
-
-      Elements elements = document.select("a[href]");
-      Set set = dedupeDiscoveredChildren(elements);
-      addValidChildrenToQueue(set, parent);
-
-      String exitChild = popVisitedChildFromQueue();
-      appendQueueSpiderModel(exitChild, parentMap.get(exitChild));
    }
 }
 
-
+/**
+ * @return - The model of the collected result as a hashmap containing,  url as key, and String [3]
+ * {parent, statuscode, responseTime} as value.
+ */
 public HashMap<String, String[]> getQueueSpiderModel () {
    return queueSpiderModel;
 }
 
 
-private void appendQueueSpiderModel (String exitChild, String parent) throws IOException {
-   long[] statusCodeAndResponseTime = getStatusCodeAndResponseTime(exitChild);
-   String statusCode = String.valueOf(statusCodeAndResponseTime[0]);
-   String responseMiliSec = String.valueOf(statusCodeAndResponseTime[1]);
+private void appendQueueSpiderModel (String exitChild, String parent) {
+   String[] statusCodeAndResponseTime = new String[2];
+   try {
+      statusCodeAndResponseTime = getStatusCodeAndResponseTime(exitChild);
+   } catch (Exception e) {
+      statusCodeAndResponseTime = handleUnsuccessfulResponse(e);
+   }
+   String statusCode = statusCodeAndResponseTime[0];
+   String responseMiliSec = statusCodeAndResponseTime[1];
    queueSpiderModel.put(exitChild,
       new String[]{parent, statusCode, responseMiliSec}
    );
+   printInConsole(statusCode, responseMiliSec, exitChild, parent);
+}
+
+
+private String[] handleUnsuccessfulResponse (Exception e) {
+   if (e instanceof HttpStatusException) {
+      return new String[]{((HttpStatusException) e).getStatusCode() + "", ""};
+   } else if (e instanceof UnsupportedMimeTypeException) {
+      return new String[]{"UnsupportedMimeTypeException", "Runtime UnsupportedMimeTypeException"};
+   } else if (e instanceof IOException) {
+      return new String[]{"IOException", "Page Timed Out"};
+   } else {
+      return new String[]{"General Error", ""};
+   }
+}
+
+
+private void printInConsole (String statusCode,
+                             String responseMiliSec,
+                             String exitChild,
+                             String parent) {
    System.out.println("      "
       + statusCode + "       "
       + responseMiliSec + "      "
       + "url: " + exitChild + "     "
       + "parent: " + parent + "     "
-      );
+   );
 }
 
 
-private long[] getStatusCodeAndResponseTime (String url) throws IOException {
+private String[] getStatusCodeAndResponseTime (String url) throws Exception {
    long startTime = System.nanoTime();
    long status = Jsoup.connect(url)
       .followRedirects(true)
@@ -100,7 +129,7 @@ private long[] getStatusCodeAndResponseTime (String url) throws IOException {
       .statusCode();
    long endTime = System.nanoTime();
    long responseInMiliSec = (endTime - startTime) / 1000000;
-   return new long[]{status, responseInMiliSec};
+   return new String[]{String.valueOf(status), String.valueOf(responseInMiliSec)};
 }
 
 

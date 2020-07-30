@@ -1,0 +1,105 @@
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.stsgi.com/
+Parent:         https://www.stsgi.com/
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/resource-center/ma-insurance-guides
+Parent:         https://www.plymouthrock.com/resource-center/ma-insurance-guides
+
+
+Status Code:    
+
+urlHost 
+URL:            https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=PA1
+Parent:         https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=PA1
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/utility/internet-policy-popup
+Parent:         https://www.plymouthrock.com/utility/internet-policy-popup
+
+
+Status Code:    
+
+urlHost 
+URL:            https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=NJ71
+Parent:         https://buy.plymouthrock.com/esales/entry/start?PLF_Code=HIPT&Grpid=NJ71
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/
+Parent:         https://www.plymouthrock.com/
+
+
+Status Code:    
+
+urlHost 
+URL:            http://www.pilgrimins.com
+Parent:         http://www.pilgrimins.com
+
+
+Status Code:    
+
+urlHost 
+URL:            https://auto.plymouthrock.com/Realtors
+Parent:         https://auto.plymouthrock.com/Realtors
+
+
+Status Code:    
+
+urlHost 
+URL:            https://pracblog.com/
+Parent:         https://pracblog.com/
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/resource-center/pa-insurance-guides/home
+Parent:         https://www.plymouthrock.com/resource-center/pa-insurance-guides/home
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com
+Parent:         https://www.plymouthrock.com
+
+
+Status Code:    
+
+urlHost 
+URL:            https://aarp.plymouthrock.com
+Parent:         https://aarp.plymouthrock.com
+
+
+Status Code:    
+
+urlHost 
+URL:            https://www.plymouthrock.com/utility/privacy-policy-popup
+Parent:         https://www.plymouthrock.com/utility/privacy-policy-popup
+
+
+Status Code:    
+
+urlHost 
+URL:            http://www.twinlightsins.com
+Parent:         http://www.twinlightsins.com
+
+

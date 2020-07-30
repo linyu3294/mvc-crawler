@@ -42,17 +42,14 @@ public void run (ISpider spider) throws IOException {
          statusCode, responseTimeInMiliSec, url, parent
       };
 
+      pagesCheckedFile.appendRow(csvEntry);
       evalResponseAndWriteToMap(Integer.valueOf(statusCode));
       if (!statusCode.trim().equals("200")) {
          initErrorsCSV();
          errors.appendRow(csvEntry);
-      } else {
-         pagesCheckedFile.appendRow(csvEntry);
       }
    }
 }
-
-
 
 
 private String[] buildTitle () {

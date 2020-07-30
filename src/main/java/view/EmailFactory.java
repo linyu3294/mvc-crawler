@@ -28,7 +28,7 @@ public static IEmail make (IController controller,
          .setSender("Z@plymouthrock.com")
          .setReceiver("ylin@plymouthrock.com")
          .setListOfCCs(listOfCCs)
-         .setSubject("Public_Website_Regression_Results_" + dateStamp)
+         .setSubject("Public Website Regression Results " + dateStamp)
          .setAttachment(
             resourcesFolderPath
                + "/errors/errors_"
@@ -40,7 +40,7 @@ public static IEmail make (IController controller,
                + "/pagesChecked/pages_checked_"
                + dateStamp
                + attachementFileType,
-            "pages_checked_" + dateStamp + attachementFileType)
+            "Public Websites Regression Results_" + dateStamp + attachementFileType)
          .setAttachment(
             resourcesFolderPath
                + "/pages_ignored.txt",
