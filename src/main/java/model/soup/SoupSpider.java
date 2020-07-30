@@ -7,6 +7,8 @@ import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
+import model.AbstractSpider;
+
 
 /**
  * This is a class for crawling and checking response status code of a website and all of its

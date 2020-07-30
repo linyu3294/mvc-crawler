@@ -1,4 +1,4 @@
-package model.soup;
+package model.queue;
 
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
@@ -14,6 +14,9 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import model.AbstractSpider;
+import model.ISpider;
 
 /**
  * A QueueSpider class extends from AbstracSpider and is a sibling to SoupSpider. A key difference

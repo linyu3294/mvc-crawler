@@ -4,8 +4,8 @@
 //import java.util.HashSet;
 //
 //import controller.IController;
-//import model.soup.ISpider;
-//import model.soup.ScShotSpider;
+//import model.ISpider;
+//import model.screen.ScShotSpider;
 //
 //
 ///**

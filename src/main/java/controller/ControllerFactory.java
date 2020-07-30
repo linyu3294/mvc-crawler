@@ -3,10 +3,6 @@ package controller;
 import java.io.IOException;
 import java.util.HashSet;
 
-import model.soup.ISpider;
-import model.soup.QueueSpider;
-import model.soup.SoupSpider;
-
 /**
  * A Factory used in main to instantiate a IController object.
  */

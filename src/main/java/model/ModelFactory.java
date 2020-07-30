@@ -1,5 +1,9 @@
-package model.soup;
+package model;
 
+
+import model.ISpider;
+import model.queue.QueueSpider;
+import model.soup.SoupSpider;
 
 /**
  * A Factory used in main to instantiate an ISpider object.

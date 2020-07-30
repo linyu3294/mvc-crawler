@@ -1,4 +1,4 @@
-package model.soup;
+package model;
 
 import java.io.IOException;
 

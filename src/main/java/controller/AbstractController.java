@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import model.soup.ISpider;
+import model.ISpider;
 import view.IEmail;
 
 /**

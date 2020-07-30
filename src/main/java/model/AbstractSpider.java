@@ -1,4 +1,4 @@
-package model.soup;
+package model;
 
 import org.jsoup.Connection;
 import org.jsoup.HttpStatusException;
@@ -19,6 +19,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Scanner;
+
+import model.ISpider;
 
 /**
  * This is an abstract Class that implements ISpider.

@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-import model.soup.ISpider;
-import model.soup.QueueSpider;
+import model.ISpider;
+import model.queue.QueueSpider;
 import view.CSV;
 
 /**

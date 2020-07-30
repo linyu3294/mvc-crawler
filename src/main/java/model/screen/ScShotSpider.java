@@ -1,4 +1,4 @@
-package model.soup;
+package model.screen;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,10 +15,10 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import model.AbstractSpider;
 import model.screen.IScnShotCompare;
 import model.screen.ScnShotCompare;
-import model.soup.AbstractSpider;
-import model.soup.ISpider;
+import model.ISpider;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;

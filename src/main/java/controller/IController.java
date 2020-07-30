@@ -2,7 +2,7 @@ package controller;
 
 import java.io.IOException;
 
-import model.soup.ISpider;
+import model.ISpider;
 import view.IEmail;
 
 public interface IController {
