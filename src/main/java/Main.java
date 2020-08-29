@@ -18,7 +18,6 @@ public static void main (String[] args) throws IOException {
    String crawlerType = "QUEUE";
 
    HashSet<String> baseUrls = new HashSet<>();
-   baseUrls.add("https://www.google.com");
    baseUrls.add("https://www.instagram.com");
 
 
@@ -43,9 +42,7 @@ public static void main (String[] args) throws IOException {
    controller.run(spider);
 
    List<String> listOfCCs = new ArrayList<String>();
-   listOfCCs.add("rstrohmenger@plymouthrock.com");
-   listOfCCs.add("cuhlar@plymouthrock.com");
-
+   
    String report = controller.createReport();
    String dateStamp = controller.getDateStamp();
 
