@@ -18,7 +18,7 @@ public static void main (String[] args) throws IOException {
    String crawlerType = "QUEUE";
 
    HashSet<String> baseUrls = new HashSet<>();
-   baseUrls.add("https://www.instagram.com");
+   baseUrls.add("https://www.wikipedia.com");
 
 
    String param;
